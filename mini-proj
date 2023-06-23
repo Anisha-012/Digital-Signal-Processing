@@ -1,0 +1,56 @@
+#Program 1
+import numpy as np
+import matplotlib.pyplot as plt
+from math import pi as p
+t=np.arange(-5,5,0.0001)
+k=4/p
+m=p/2
+k1=k*np.cos(m*t)
+k2=(-k/3)*np.cos(3*m*t)
+k3=(k/5)*np.cos(5*m*t)
+k4=(-k/7)*np.cos(7*m*t)
+k5=(k/9)*np.cos(9*m*t)
+amplitude=k1+k2+k3+k4+k5
+plt.plot(t,amplitude,color='red')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+plt.title('Perodic signal')
+plt.grid()
+plt.show
+
+#Program 2
+import numpy as np
+import matplotlib.pyplot as plt
+from math import pi as p
+t=np.arange(-5,5,0.0001)
+k=8/p*p
+k1=k*np.sin(p*t)
+k2=(-k/9)*np.sin(3*p*t)
+k3=(k/25)*np.sin(5*p*t)
+k4=(-k/49)*np.sin(7*p*t)
+amplitude=k1+k2+k3+k4
+plt.plot(t,amplitude,color='red')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+plt.title('Perodic signal')
+plt.grid()
+plt.show 
+
+#Program 3
+import numpy as np
+import matplotlib.pyplot as plt
+from math import pi as p
+t=np.arange(-5,5,0.0001)
+k=20/p
+k1=k*np.sin(p*t)
+k2=(k/3)*np.sin(3*p*t)
+k3=(k/5)*np.sin(5*p*t)
+k4=(k/7)*np.sin(7*p*t)
+k5=(k/9)*np.sin(9*p*t)
+amplitude=k1+k2+k3+k4+k5
+plt.plot(t,amplitude,color='red')
+plt.xlabel('Time')
+plt.ylabel('Amplitude')
+plt.title('Perodic signal')
+plt.grid()
+plt.show
